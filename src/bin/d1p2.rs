@@ -12,14 +12,12 @@ fn main() -> io::Result<()> {
             let dist: i32 = if cur == 0 {num - m} else {num - cur};
             if dist >= 0 {
                 password += dist / m + 1;
-                println!("{line}: {}", password);
             }
             cur = (cur - (num % m) + m) % m;
         } else {
             let dist: i32 = num - (m - cur);
             if dist >= 0 {
                 password += dist / m + 1;
-                println!("{line} : {}", password);
             }
             cur = (cur + num) % m;
         }
