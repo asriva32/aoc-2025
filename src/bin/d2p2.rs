@@ -22,7 +22,6 @@ fn main() -> io::Result<()>{
                 if !limit.is_multiple_of(d) {
                     continue;
                 }
-                
                 if check(&v, d) {
                     ans += v.parse::<i64>().unwrap();
                     break;
