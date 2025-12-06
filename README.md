@@ -1,0 +1,1 @@
+advent of code 2025 solutions in rust
